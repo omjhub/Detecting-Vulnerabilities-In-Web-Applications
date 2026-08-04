@@ -26,6 +26,8 @@ reference set for evaluating baseline ZAP scans vs the enhanced workflow.
 
 | # | Vuln Class | Location | Payload | Result | Verified |
 |---|---|---|---|---|---|
+| 1 | Reflected XSS | Search bar | `<iframe src="javascript:alert('XSS')">` | Alert triggered successfully. Confirms the search feature reflects the query parameter into the page without encoding, executing injected HTML/JS via an iframe javascript: URI vector (distinct technique from the `<script>` and `<img onerror>` vectors used against DVWA). | Yes |
+| 2 | SQL Injection (Auth Bypass) | Login form (Email field) | `' OR 1=1--` (email), arbitrary password | Successfully logged in as the administrator account without valid credentials. Confirmed independently by Juice Shop's built-in challenge tracker, which flagged "Login Admin" as solved. Demonstrates SQLi enabling authentication bypass, not just data extraction. | Yes |
 
 ## Notes
 
