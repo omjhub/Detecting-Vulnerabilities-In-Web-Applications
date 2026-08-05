@@ -1,0 +1,154 @@
+target,alert_name,risk,confidence,url,param
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/login.php,x-frame-options
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/index.php,x-frame-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/security.php,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/login.php,
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/login.php,
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/index.php,
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080/login.php,PHPSESSID
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080/login.php,security
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080/login.php,PHPSESSID
+dvwa,Authentication Request Identified,Informational,High,http://host.docker.internal:8080/login.php,Login
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080/login.php,security
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/login.php,
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/security.php,x-frame-options
+dvwa,Session Management Response Identified,Informational,High,http://host.docker.internal:8080/login.php,PHPSESSID
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit,x-frame-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/index.php,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/login.php,x-content-type-options
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/index.php,x-content-type-options
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit,
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/security.php,
+dvwa,Session Management Response Identified,Informational,Medium,http://host.docker.internal:8080/login.php,PHPSESSID
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/security.php,
+dvwa,User Controllable HTML Element Attribute (Potential XSS),Informational,Low,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit,Submit
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/security.php,x-content-type-options
+dvwa,User Controllable HTML Element Attribute (Potential XSS),Informational,Low,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit,Submit
+dvwa,User Controllable HTML Element Attribute (Potential XSS),Informational,Low,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit,Submit
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit,x-content-type-options
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind/?id=1&Submit=Submit,x-frame-options
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r/?name=test,x-frame-options
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/vulnerabilities/sqli_blind/?id=1&Submit=Submit,
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/vulnerabilities/xss_r/?name=test,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/xss_r/?name=test,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/sqli_blind/?id=1&Submit=Submit,
+dvwa,User Controllable HTML Element Attribute (Potential XSS),Informational,Low,http://host.docker.internal:8080/vulnerabilities/sqli_blind/?id=1&Submit=Submit,Submit
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r/?name=test,x-content-type-options
+dvwa,User Controllable HTML Element Attribute (Potential XSS),Informational,Low,http://host.docker.internal:8080/vulnerabilities/sqli_blind/?id=1&Submit=Submit,Submit
+dvwa,User Controllable HTML Element Attribute (Potential XSS),Informational,Low,http://host.docker.internal:8080/vulnerabilities/sqli_blind/?id=1&Submit=Submit,Submit
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind/?id=1&Submit=Submit,x-content-type-options
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,x-frame-options
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,x-frame-options
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/vulnerabilities/xss_s/,
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/vulnerabilities/xss_s/,
+dvwa,Absence of Anti-CSRF Tokens,Medium,Low,http://host.docker.internal:8080/vulnerabilities/xss_s/,
+dvwa,Absence of Anti-CSRF Tokens,Medium,Low,http://host.docker.internal:8080/vulnerabilities/xss_s/,
+dvwa,Information Disclosure - Suspicious Comments,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,
+dvwa,Information Disclosure - Suspicious Comments,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/xss_s/,
+dvwa,User Controllable HTML Element Attribute (Potential XSS),Informational,Low,http://host.docker.internal:8080/vulnerabilities/xss_s/,btnSign
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/xss_s/,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,x-content-type-options
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,x-content-type-options
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/sitemap.xml,
+dvwa,In Page Banner Information Leak,Low,High,http://host.docker.internal:8080/sitemap.xml,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/sqli,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/sqli_blind,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/xss_r,
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r/?name=test,PHPSESSID
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit,PHPSESSID
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080,PHPSESSID
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/sitemap.xml,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/xss_s,
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind/?id=1&Submit=Submit,PHPSESSID
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r/?name=test,security
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r/?name=test,PHPSESSID
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind/?id=1&Submit=Submit,security
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080/security.php,PHPSESSID
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind/?id=1&Submit=Submit,PHPSESSID
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind/?id=1&Submit=Submit,security
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit,security
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit,PHPSESSID
+dvwa,Session Management Response Identified,Informational,High,http://host.docker.internal:8080/vulnerabilities/sqli_blind/?id=1&Submit=Submit,PHPSESSID
+dvwa,Session Management Response Identified,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind/?id=1&Submit=Submit,PHPSESSID
+dvwa,Session Management Response Identified,Informational,High,http://host.docker.internal:8080,PHPSESSID
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080/security.php,security
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080,security
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r/?name=test,security
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit,security
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/sqli/,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/xss_r/,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities,
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080/security.php,PHPSESSID
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080,PHPSESSID
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080/security.php,security
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/sqli_blind/,
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/vulnerabilities/,x-frame-options
+dvwa,Application Error Disclosure,Medium,Medium,http://host.docker.internal:8080/vulnerabilities/,
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/vulnerabilities/,
+dvwa,Directory Browsing,Medium,Medium,http://host.docker.internal:8080/vulnerabilities/,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/robots.txt,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/brute/,
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/vulnerabilities/?C=S;O=A,x-frame-options
+dvwa,Session Management Response Identified,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit,PHPSESSID
+dvwa,Session Management Response Identified,Informational,Medium,http://host.docker.internal:8080/security.php,PHPSESSID
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080,security
+dvwa,Application Error Disclosure,Medium,Medium,http://host.docker.internal:8080/vulnerabilities/?C=D;O=A,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/captcha/,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/robots.txt,x-content-type-options
+dvwa,Session Management Response Identified,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r/?name=test,PHPSESSID
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/vulnerabilities/,x-content-type-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/csrf/,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/javascript/,
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/vulnerabilities/?C=D;O=A,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080,
+dvwa,Directory Browsing,Medium,Medium,http://host.docker.internal:8080/vulnerabilities/?C=D;O=A,
+dvwa,Session Management Response Identified,Informational,Medium,http://host.docker.internal:8080,PHPSESSID
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/upload/,
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080/index.php,PHPSESSID
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/view_source.php,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/?C=D;O=A,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/exec/,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/vulnerabilities/?C=S;O=A,x-content-type-options
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080/index.php,security
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080/index.php,PHPSESSID
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/view_source_all.php,
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080/index.php,security
+dvwa,Session Management Response Identified,Informational,High,http://host.docker.internal:8080/index.php,PHPSESSID
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/csp/,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/fi/,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/weak_id/,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/xss_d/,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/view_help.php,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/icons/blank.gif,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/icons/back.gif,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/icons/blank.gif,x-content-type-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/icons/folder.gif,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/icons/unknown.gif,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/css/login.css,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/icons/unknown.gif,x-content-type-options
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/css/login.css,x-content-type-options
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/icons/folder.gif,x-content-type-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/images/RandomStorm.png,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/images/RandomStorm.png,x-content-type-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/images/login_logo.png,
+dvwa,Authentication Request Identified,Informational,High,http://host.docker.internal:8080/login.php,Login
+dvwa,Session Management Response Identified,Informational,Medium,http://host.docker.internal:8080/index.php,PHPSESSID
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/images/login_logo.png,x-content-type-options
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/icons/back.gif,x-content-type-options
+dvwa,Cross Site Scripting (Reflected),High,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r/?name=%3C%2Fpre%3E%3CscrIpt%3Ealert%281%29%3B%3C%2FscRipt%3E%3Cpre%3E,name
+dvwa,Cross Site Scripting (Reflected),High,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/?id=%27%22%3CscrIpt%3Ealert%281%29%3B%3C%2FscRipt%3E&Submit=Submit,id
+dvwa,Cross Site Scripting (Reflected),High,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,txtName
+dvwa,Cross Site Scripting (Reflected),High,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,mtxMessage
+dvwa,Cross Site Scripting (Reflected),High,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,btnSign
+dvwa,Cross Site Scripting (Persistent),High,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,txtName
+dvwa,Cross Site Scripting (Persistent),High,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,mtxMessage
+dvwa,Cross Site Scripting (Persistent),High,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,btnSign
+dvwa,SQL Injection - MySQL,High,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/?id=%27&Submit=Submit,id
+dvwa,SQL Injection,High,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r/?name=test+AND+1%3D1+--+,name
+dvwa,SQL Injection,High,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind/?id=1+AND+1%3D1+--+&Submit=Submit,id
+dvwa,SQL Injection,High,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit+AND+1%3D1,Submit
+dvwa,SQL Injection,High,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind/?id=1&Submit=Submit+AND+1%3D1+--+,Submit

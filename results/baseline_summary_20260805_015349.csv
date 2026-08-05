@@ -1,0 +1,610 @@
+target,alert_name,risk,confidence,url,param
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/login.php,x-frame-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/login.php,
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/login.php,
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080/login.php,PHPSESSID
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/index.php,x-frame-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/security.php,
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080/login.php,security
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080/login.php,PHPSESSID
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/index.php,
+dvwa,Authentication Request Identified,Informational,High,http://host.docker.internal:8080/login.php,Login
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080/login.php,security
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/login.php,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/index.php,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/login.php,x-content-type-options
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/index.php,x-content-type-options
+dvwa,Session Management Response Identified,Informational,High,http://host.docker.internal:8080/login.php,PHPSESSID
+dvwa,Session Management Response Identified,Informational,Medium,http://host.docker.internal:8080/login.php,PHPSESSID
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/security.php,x-frame-options
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/sitemap.xml,
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080,PHPSESSID
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/security.php,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/robots.txt,
+dvwa,In Page Banner Information Leak,Low,High,http://host.docker.internal:8080/sitemap.xml,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/,
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/security.php,
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080,security
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/robots.txt,x-content-type-options
+dvwa,Session Management Response Identified,Informational,High,http://host.docker.internal:8080,PHPSESSID
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/css/login.css,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/sitemap.xml,
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080,PHPSESSID
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/css/login.css,x-content-type-options
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/security.php,x-content-type-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/images/login_logo.png,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/images/RandomStorm.png,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/images/login_logo.png,x-content-type-options
+dvwa,Authentication Request Identified,Informational,High,http://host.docker.internal:8080/login.php,Login
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/images/RandomStorm.png,x-content-type-options
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080,security
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080,
+dvwa,Session Management Response Identified,Informational,Medium,http://host.docker.internal:8080,PHPSESSID
+dvwa,Directory Browsing,Medium,Medium,http://host.docker.internal:8080/dvwa/css/,
+dvwa,Directory Browsing,Medium,Medium,http://host.docker.internal:8080/dvwa/,
+dvwa,Directory Browsing,Medium,Medium,http://host.docker.internal:8080/dvwa/images/,
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/css,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/images,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/images,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/css,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/index.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/images,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/index.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/css,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/images,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/index.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/index.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/images,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/css,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/index.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/css,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/images,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/css,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/index.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/images,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/index.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/css,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/images,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/index.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/css,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/index.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/images,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/css,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/index.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/images,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/index.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/index.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/images,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/css,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/css,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/images,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/css,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/dvwa/css/,x-frame-options
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/dvwa/,x-frame-options
+dvwa,Application Error Disclosure,Medium,Medium,http://host.docker.internal:8080/dvwa/css/,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/css,
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080/,PHPSESSID
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/images,
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/dvwa/css/,
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/dvwa/css/?C=S;O=A,x-frame-options
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/dvwa/?C=M;O=A,x-frame-options
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080/,security
+dvwa,Application Error Disclosure,Medium,Medium,http://host.docker.internal:8080/dvwa/?C=M;O=A,
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080/,PHPSESSID
+dvwa,Application Error Disclosure,Medium,Medium,http://host.docker.internal:8080/dvwa/css/?C=S;O=A,
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/dvwa/?C=M;O=A,
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080/,security
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/dvwa/css/?C=S;O=A,
+dvwa,Session Management Response Identified,Informational,Medium,http://host.docker.internal:8080/,PHPSESSID
+dvwa,Directory Browsing,Medium,Medium,http://host.docker.internal:8080/dvwa/?C=M;O=A,
+dvwa,Application Error Disclosure,Medium,Medium,http://host.docker.internal:8080/dvwa/,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/?C=M;O=A,
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/dvwa/,
+dvwa,Directory Browsing,Medium,Medium,http://host.docker.internal:8080/dvwa/css/?C=S;O=A,
+dvwa,Directory Browsing,Medium,Medium,http://host.docker.internal:8080/dvwa/,
+dvwa,Directory Browsing,Medium,Medium,http://host.docker.internal:8080/dvwa/css/,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/css/?C=S;O=A,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/css/?C=S;O=A,x-content-type-options
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/?C=M;O=A,x-content-type-options
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/,x-content-type-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/css/,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/css/,x-content-type-options
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/dvwa/images/,x-frame-options
+dvwa,Application Error Disclosure,Medium,Medium,http://host.docker.internal:8080/dvwa/images/,
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/dvwa/images/,
+dvwa,Directory Browsing,Medium,Medium,http://host.docker.internal:8080/dvwa/images/,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/css/help.css,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/images/,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/css/help.css,x-content-type-options
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/images/,x-content-type-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/css/main.css,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/css/source.css,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/css/source.css,x-content-type-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/icons/text.gif,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/icons/text.gif,x-content-type-options
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/css/main.css,x-content-type-options
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/dvwa/js/,x-frame-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/icons/back.gif,
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/dvwa/images/?C=N;O=D,x-frame-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/icons/blank.gif,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/icons/back.gif,x-content-type-options
+dvwa,Application Error Disclosure,Medium,Medium,http://host.docker.internal:8080/dvwa/js/,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/icons/blank.gif,x-content-type-options
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/dvwa/js/,
+dvwa,Application Error Disclosure,Medium,Medium,http://host.docker.internal:8080/dvwa/images/?C=M;O=A,
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/dvwa/images/?C=M;O=A,
+dvwa,Directory Browsing,Medium,Medium,http://host.docker.internal:8080/dvwa/images/?C=M;O=A,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/icons/folder.gif,
+dvwa,Directory Browsing,Medium,Medium,http://host.docker.internal:8080/dvwa/js/,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/icons/folder.gif,x-content-type-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/images/?C=N;O=D,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/images/?C=N;O=D,x-content-type-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/js/,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/js/,x-content-type-options
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/dvwa/js/?C=N;O=D,x-frame-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/images/dollar.png,
+dvwa,Application Error Disclosure,Medium,Medium,http://host.docker.internal:8080/dvwa/js/?C=N;O=D,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/images/lock.png,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/images/dollar.png,x-content-type-options
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/images/lock.png,x-content-type-options
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/dvwa/js/?C=N;O=D,
+dvwa,Directory Browsing,Medium,Medium,http://host.docker.internal:8080/dvwa/js/?C=N;O=D,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/js/?C=N;O=D,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/js/?C=N;O=D,x-content-type-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/images/logo.png,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/images/spanner.png,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/images/spanner.png,x-content-type-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/images/warning.png,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/images/logo.png,x-content-type-options
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/images/warning.png,x-content-type-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/icons/image2.gif,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/icons/unknown.gif,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/js,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/icons/unknown.gif,x-content-type-options
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/icons/image2.gif,x-content-type-options
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/dvwa/includes/,x-frame-options
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/dvwa/includes/?C=N;O=D,x-frame-options
+dvwa,Application Error Disclosure,Medium,Medium,http://host.docker.internal:8080/dvwa/includes/,
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/dvwa/includes/,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/js/add_event_listeners.js,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/js/add_event_listeners.js,x-content-type-options
+dvwa,Directory Browsing,Medium,Medium,http://host.docker.internal:8080/dvwa/includes/,
+dvwa,Application Error Disclosure,Medium,Medium,http://host.docker.internal:8080/dvwa/includes/?C=N;O=D,
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/dvwa/includes/?C=N;O=D,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/includes/,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/includes/,x-content-type-options
+dvwa,Directory Browsing,Medium,Medium,http://host.docker.internal:8080/dvwa/includes/?C=N;O=D,
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/dvwa/includes/DBMS/,x-frame-options
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/dvwa/includes/dvwaPage.inc.php,x-frame-options
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/dvwa/includes/dvwaPage.inc.php,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/includes/dvwaPage.inc.php,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/includes/dvwaPage.inc.php,x-content-type-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/includes/?C=N;O=D,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/js/dvwaPage.js,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/includes/?C=S;O=A,x-content-type-options
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/js/dvwaPage.js,x-content-type-options
+dvwa,Application Error Disclosure,Medium,Medium,http://host.docker.internal:8080/dvwa/includes/DBMS/,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/includes,
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/dvwa/includes/DBMS/,
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/dvwa/includes/DBMS/?C=S;O=A,x-frame-options
+dvwa,Application Error Disclosure,Medium,Medium,http://host.docker.internal:8080/dvwa/includes/DBMS/?C=S;O=A,
+dvwa,Directory Browsing,Medium,Medium,http://host.docker.internal:8080/dvwa/includes/DBMS/,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/includes/DBMS/,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/includes/DBMS/,x-content-type-options
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/dvwa/includes/DBMS/?C=N;O=D,
+dvwa,Directory Browsing,Medium,Medium,http://host.docker.internal:8080/dvwa/includes/DBMS/?C=N;O=D,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/includes/DBMS/?C=N;O=D,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/includes/DBMS/?C=N;O=D,x-content-type-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/includes/DBMS,
+dvwa,Application Error Disclosure,Low,Medium,http://host.docker.internal:8080/dvwa/includes/DBMS/MySQL.php,
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/dvwa/includes/DBMS/MySQL.php,
+dvwa,Application Error Disclosure,Low,Medium,http://host.docker.internal:8080/dvwa/includes/DBMS/PGSQL.php,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/includes/DBMS/MySQL.php,
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/dvwa/includes/dvwaPhpIds.inc.php,
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/dvwa/includes/DBMS/PGSQL.php,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/includes/DBMS/PGSQL.php,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/includes/dvwaPhpIds.inc.php,
+dvwa,Directory Browsing,Medium,Medium,http://host.docker.internal:8080/dvwa/includes/DBMS/,
+dvwa,Directory Browsing,Medium,Medium,http://host.docker.internal:8080/dvwa/includes/,
+dvwa,Directory Browsing,Medium,Medium,http://host.docker.internal:8080/dvwa/js/,
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/includes,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/includes,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/includes,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/includes,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/includes,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/includes,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/includes,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/includes,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/includes,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/includes,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/includes,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/includes,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/includes/DBMS,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/js,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/includes/DBMS,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/js,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/js,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/includes/DBMS,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/js,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/includes/DBMS,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/js,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/includes/DBMS,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/js,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/js,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/includes/DBMS,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/js,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/includes/DBMS,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/includes/DBMS,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/js,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/includes/DBMS,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/js,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/includes/DBMS,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/js,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/includes/DBMS,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/js,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/includes/DBMS,Header User-Agent
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/scripts.js,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/polyfills.js,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/chunk-5K74DZ2F.js,
+juiceshop,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:3000/,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/chunk-VS3A3LTT.js,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/chunk-PX7UKXVL.js,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/styles.css,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/chunk-YVDT5JXT.js,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/chunk-UNFVUBM2.js,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/chunk-DYXK4NW4.js,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/chunk-NWDAIMF4.js,
+juiceshop,Timestamp Disclosure - Unix,Low,Low,http://host.docker.internal:3000/styles.css,
+juiceshop,Timestamp Disclosure - Unix,Low,Low,http://host.docker.internal:3000/styles.css,
+juiceshop,Timestamp Disclosure - Unix,Low,Low,http://host.docker.internal:3000/styles.css,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/chunk-QBYXNN7Z.js,
+juiceshop,Timestamp Disclosure - Unix,Low,Low,http://host.docker.internal:3000/styles.css,
+juiceshop,Timestamp Disclosure - Unix,Low,Low,http://host.docker.internal:3000/styles.css,
+juiceshop,Timestamp Disclosure - Unix,Low,Low,http://host.docker.internal:3000/styles.css,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/chunk-VJL3IV3O.js,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/chunk-OKA37M7B.js,
+juiceshop,Timestamp Disclosure - Unix,Low,Low,http://host.docker.internal:3000/styles.css,
+juiceshop,Timestamp Disclosure - Unix,Low,Low,http://host.docker.internal:3000/styles.css,
+juiceshop,Timestamp Disclosure - Unix,Low,Low,http://host.docker.internal:3000/styles.css,
+juiceshop,Timestamp Disclosure - Unix,Low,Low,http://host.docker.internal:3000/styles.css,
+juiceshop,Timestamp Disclosure - Unix,Low,Low,http://host.docker.internal:3000/styles.css,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/chunk-QDZ6R7S6.js,
+juiceshop,Modern Web Application,Informational,Medium,http://host.docker.internal:3000/,
+juiceshop,Timestamp Disclosure - Unix,Low,Low,http://host.docker.internal:3000/,
+juiceshop,Timestamp Disclosure - Unix,Low,Low,http://host.docker.internal:3000/,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/chunk-NUMHA4AJ.js,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/main.js,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/rest/admin/application-version,
+juiceshop,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFTsn,x-content-type-options
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/rest/admin/application-configuration,
+juiceshop,Private IP Disclosure,Low,Medium,http://host.docker.internal:3000/rest/admin/application-configuration,
+juiceshop,Timestamp Disclosure - Unix,Low,Low,http://host.docker.internal:3000/rest/admin/application-configuration,
+juiceshop,Timestamp Disclosure - Unix,Low,Low,http://host.docker.internal:3000/rest/admin/application-configuration,
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFU0O&sid=pOJMCFoskK_IdXqqAAAM,sid
+juiceshop,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFU0O&sid=pOJMCFoskK_IdXqqAAAM,x-content-type-options
+juiceshop,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFU0K&sid=pOJMCFoskK_IdXqqAAAM,x-frame-options
+juiceshop,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFU0K&sid=pOJMCFoskK_IdXqqAAAM,
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFU0K&sid=pOJMCFoskK_IdXqqAAAM,sid
+juiceshop,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFU0K&sid=pOJMCFoskK_IdXqqAAAM,x-content-type-options
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/assets/public/images/JuiceShop_Logo.png,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/assets/i18n/en.json,
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=pOJMCFoskK_IdXqqAAAM,sid
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/rest/languages,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/media/material-icons-LEZCGFVT.woff2,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/rest/products/search?q=,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/api/Challenges/?name=Score%20Board,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/assets/public/favicon_js.ico,
+juiceshop,Timestamp Disclosure - Unix,Low,Low,http://host.docker.internal:3000/rest/products/search?q=,
+juiceshop,Timestamp Disclosure - Unix,Low,Low,http://host.docker.internal:3000/rest/products/search?q=,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/api/Quantitys/,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/assets/public/images/products/apple_pressings.jpg,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/assets/public/images/products/banana_juice.jpg,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/assets/public/images/products/dragonfruit_juice.png,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/assets/public/images/products/berry_juice.png,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/assets/public/images/products/apple_juice.jpg,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/assets/public/images/products/grape_juice.png,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/assets/public/images/products/braga.jpg,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/assets/public/images/products/artwork2.jpg,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/assets/public/images/products/carrot_juice.jpeg,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/assets/public/images/products/elderflower_cordial.jpg,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/assets/public/images/products/permafrost.jpg,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/assets/public/images/products/eggfruit_juice.jpg,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/assets/public/images/products/basil_smoothie.png,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/assets/public/images/products/lemon_juice.jpg,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/assets/public/images/products/fruit_press.jpg,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/assets/public/images/products/green_smoothie.jpg,
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFUg5&sid=d0dcSW_yIbyH-5XcAAAO,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFUg4&sid=d0dcSW_yIbyH-5XcAAAO,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=d0dcSW_yIbyH-5XcAAAO,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFVWb&sid=-OluBnDGg6bVk8tpAAAQ,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=-OluBnDGg6bVk8tpAAAQ,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFVWX&sid=-OluBnDGg6bVk8tpAAAQ,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=YqBm81Ux_KnkomnLAAAS,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFX6g&sid=YqBm81Ux_KnkomnLAAAS,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFX6o&sid=YqBm81Ux_KnkomnLAAAS,sid
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/hacking-instructor-TNP7OAEF.js,
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/assets/public/images/hackingInstructor.png,
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFYC8&sid=UN0IxIMJ1HYeJqAJAAAU,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=UN0IxIMJ1HYeJqAJAAAU,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFYC9&sid=UN0IxIMJ1HYeJqAJAAAU,sid
+juiceshop,Cross-Domain Misconfiguration,Medium,Medium,http://host.docker.internal:3000/media/font-mfizz-4UOGIENA.woff,
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFYwS&sid=YIOaNWJ-TBSe_UJbAAAW,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=YIOaNWJ-TBSe_UJbAAAW,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFYwR&sid=YIOaNWJ-TBSe_UJbAAAW,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFZLW&sid=MqMXerCg2wj1UY_HAAAY,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=MqMXerCg2wj1UY_HAAAY,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFZLY&sid=MqMXerCg2wj1UY_HAAAY,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=15R_rGecC3IViqi8AAAa,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFZXL&sid=15R_rGecC3IViqi8AAAa,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFZXH&sid=15R_rGecC3IViqi8AAAa,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFZjg&sid=GMoQM-DGPSnGbgV0AAAc,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFZjd&sid=GMoQM-DGPSnGbgV0AAAc,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=GMoQM-DGPSnGbgV0AAAc,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaGh&sid=db_cnWYUz0_NG51MAAAe,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=db_cnWYUz0_NG51MAAAe,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaHM&sid=_ahNz6KkbQKLPmMzAAAf,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaGr&sid=db_cnWYUz0_NG51MAAAe,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaHa&sid=_ahNz6KkbQKLPmMzAAAf,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=_ahNz6KkbQKLPmMzAAAf,sid
+juiceshop,SQL Injection,High,Low,http://host.docker.internal:3000/rest/products/search?q=%27%28,q
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaBA,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaUy&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaHM&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaHM&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaBA,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaUy&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaHM&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaBA,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaUy&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaBA,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaUy&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaHM&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaUy&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaHM&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaBA,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaHM&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaUy&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaBA,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaHM&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaUy&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaBA,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaUy&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaHM&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaBA,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaUy&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaBA,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaHM&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaBA,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaUy&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaHM&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaUy&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaBA,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaUy&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaHM&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaBA,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FFaHM&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=_ahNz6KkbQKLPmMzAAAf,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/i18n,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/i18n,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public/images,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public/images/products,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public/images,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/i18n,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public/images/products,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public/images,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/i18n,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public/images/products,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public/images,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/i18n,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public/images/products,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public/images,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/i18n,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public/images/products,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public/images,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/i18n,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public/images/products,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public/images,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/i18n,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public/images/products,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public/images,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/i18n,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public/images/products,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public/images,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/i18n,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public/images/products,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public/images,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/i18n,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public/images/products,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public/images,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/i18n,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public/images,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public/images/products,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/assets/public/images/products,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/media,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/media,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/media,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/media,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/media,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/media,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/media,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/media,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/media,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/media,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/media,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/media,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/rest/languages,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/rest/languages,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/rest/languages,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/rest/languages,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/rest/languages,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/rest/languages,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/rest/languages,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/rest/languages,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/rest/languages,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/rest/languages,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/rest/languages,Header User-Agent
+juiceshop,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:3000/rest/languages,Header User-Agent
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FOs_o&sid=DXDVPxdxN_wUh1s4AAHg,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FOs_p&sid=DXDVPxdxN_wUh1s4AAHg,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=DXDVPxdxN_wUh1s4AAHg,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FOtRX&sid=s2wlDhA5CM1kYCclAAHi,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FOtRY&sid=s2wlDhA5CM1kYCclAAHi,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=s2wlDhA5CM1kYCclAAHi,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FOuRK&sid=gdFcsOyt2PwbUHkdAAHk,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=gdFcsOyt2PwbUHkdAAHk,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FOuRR&sid=gdFcsOyt2PwbUHkdAAHk,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FOv1j&sid=QxmU05P6u2DSqgoJAAHm,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=QxmU05P6u2DSqgoJAAHm,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FOv1i&sid=QxmU05P6u2DSqgoJAAHm,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=G7yu1Z4ijEs5gl4hAAHo,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FOvv9&sid=G7yu1Z4ijEs5gl4hAAHo,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FOvv8&sid=G7yu1Z4ijEs5gl4hAAHo,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FOx0z&sid=4wX62jTEVDmo_MhIAAHq,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=4wX62jTEVDmo_MhIAAHq,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FOx17&sid=4wX62jTEVDmo_MhIAAHq,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FOxJX&sid=gA1QF8huVp8jSFQfAAHs,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=gA1QF8huVp8jSFQfAAHs,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FOxJZ&sid=gA1QF8huVp8jSFQfAAHs,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FOxtR&sid=Pvv63yuPw-X0Q-tHAAHu,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FOxth&sid=Pvv63yuPw-X0Q-tHAAHu,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=Pvv63yuPw-X0Q-tHAAHu,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=-raY_Yjja-PoE1Q6AAHw,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FOyiJ&sid=-raY_Yjja-PoE1Q6AAHw,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FOyi5&sid=-raY_Yjja-PoE1Q6AAHw,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FOysl&sid=yy0UFPbQIyvFVK2BAAHy,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FOyst&sid=yy0UFPbQIyvFVK2BAAHy,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=yy0UFPbQIyvFVK2BAAHy,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FOzat&sid=ZoSDX8sESEGR1ep6AAH0,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=ZoSDX8sESEGR1ep6AAH0,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FOzb1&sid=ZoSDX8sESEGR1ep6AAH0,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FOzgd&sid=WnFFdPHl50I187pVAAH2,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=WnFFdPHl50I187pVAAH2,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FOzgf&sid=WnFFdPHl50I187pVAAH2,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FO-Pz&sid=HqG7FRFzqcWCDyShAAH4,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=HqG7FRFzqcWCDyShAAH4,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FO-Pn&sid=HqG7FRFzqcWCDyShAAH4,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=websocket&sid=42M9OvqJ7Ch47dhXAAH5,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FO-Tm&sid=42M9OvqJ7Ch47dhXAAH5,sid
+juiceshop,Session ID in URL Rewrite,Medium,High,http://host.docker.internal:3000/socket.io/?EIO=4&transport=polling&t=P_FO-Ti&sid=42M9OvqJ7Ch47dhXAAH5,sid

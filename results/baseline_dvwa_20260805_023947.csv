@@ -1,0 +1,660 @@
+target,alert_name,risk,confidence,url,param
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/login.php,x-frame-options
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/index.php,x-frame-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/login.php,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/security.php,
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/login.php,
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/index.php,
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080/login.php,PHPSESSID
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080/login.php,security
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080/login.php,PHPSESSID
+dvwa,Authentication Request Identified,Informational,High,http://host.docker.internal:8080/login.php,Login
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080/login.php,security
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/login.php,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/index.php,
+dvwa,Session Management Response Identified,Informational,High,http://host.docker.internal:8080/login.php,PHPSESSID
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/login.php,x-content-type-options
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/index.php,x-content-type-options
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/security.php,x-frame-options
+dvwa,Session Management Response Identified,Informational,Medium,http://host.docker.internal:8080/login.php,PHPSESSID
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit,x-frame-options
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/security.php,
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit,
+dvwa,User Controllable HTML Element Attribute (Potential XSS),Informational,Low,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit,Submit
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/security.php,
+dvwa,User Controllable HTML Element Attribute (Potential XSS),Informational,Low,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit,Submit
+dvwa,User Controllable HTML Element Attribute (Potential XSS),Informational,Low,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit,Submit
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/security.php,x-content-type-options
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r/?name=test,x-frame-options
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit,x-content-type-options
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind/?id=1&Submit=Submit,x-frame-options
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/vulnerabilities/xss_r/?name=test,
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/vulnerabilities/sqli_blind/?id=1&Submit=Submit,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/xss_r/?name=test,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r/?name=test,x-content-type-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/sqli_blind/?id=1&Submit=Submit,
+dvwa,User Controllable HTML Element Attribute (Potential XSS),Informational,Low,http://host.docker.internal:8080/vulnerabilities/sqli_blind/?id=1&Submit=Submit,Submit
+dvwa,User Controllable HTML Element Attribute (Potential XSS),Informational,Low,http://host.docker.internal:8080/vulnerabilities/sqli_blind/?id=1&Submit=Submit,Submit
+dvwa,User Controllable HTML Element Attribute (Potential XSS),Informational,Low,http://host.docker.internal:8080/vulnerabilities/sqli_blind/?id=1&Submit=Submit,Submit
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind/?id=1&Submit=Submit,x-content-type-options
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,x-frame-options
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,x-frame-options
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/vulnerabilities/xss_s/,
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/vulnerabilities/xss_s/,
+dvwa,Absence of Anti-CSRF Tokens,Medium,Low,http://host.docker.internal:8080/vulnerabilities/xss_s/,
+dvwa,Absence of Anti-CSRF Tokens,Medium,Low,http://host.docker.internal:8080/vulnerabilities/xss_s/,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/xss_s/,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/xss_s/,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,x-content-type-options
+dvwa,User Controllable HTML Element Attribute (Potential XSS),Informational,Low,http://host.docker.internal:8080/vulnerabilities/xss_s/,btnSign
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,x-content-type-options
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/sitemap.xml,
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080,PHPSESSID
+dvwa,In Page Banner Information Leak,Low,High,http://host.docker.internal:8080/sitemap.xml,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/sqli,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/sitemap.xml,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/sqli_blind,
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit,PHPSESSID
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080,security
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/sqli/,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/sqli_blind/,
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080,PHPSESSID
+dvwa,Session Management Response Identified,Informational,High,http://host.docker.internal:8080,PHPSESSID
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080,security
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit,security
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit,PHPSESSID
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit,security
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080,
+dvwa,Session Management Response Identified,Informational,High,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit,PHPSESSID
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/xss_r,
+dvwa,Session Management Response Identified,Informational,Medium,http://host.docker.internal:8080,PHPSESSID
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/images/login_logo.png,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/css/login.css,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/images/login_logo.png,x-content-type-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/xss_s,
+dvwa,Session Management Response Identified,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit,PHPSESSID
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/css/login.css,x-content-type-options
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/vulnerabilities/,x-frame-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/dvwa/images/RandomStorm.png,
+dvwa,Missing Anti-clickjacking Header,Medium,Medium,http://host.docker.internal:8080/vulnerabilities/?C=M;O=A,x-frame-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/robots.txt,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/xss_r/,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/dvwa/images/RandomStorm.png,x-content-type-options
+dvwa,Application Error Disclosure,Medium,Medium,http://host.docker.internal:8080/vulnerabilities/?C=M;O=A,
+dvwa,Application Error Disclosure,Medium,Medium,http://host.docker.internal:8080/vulnerabilities/,
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/vulnerabilities/,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/brute/,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/robots.txt,x-content-type-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/exec/,
+dvwa,Directory Browsing,Medium,Medium,http://host.docker.internal:8080/vulnerabilities/,
+dvwa,Session Management Response Identified,Informational,High,http://host.docker.internal:8080/index.php,PHPSESSID
+dvwa,Content Security Policy (CSP) Header Not Set,Medium,High,http://host.docker.internal:8080/vulnerabilities/?C=M;O=A,
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080/security.php,PHPSESSID
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/,
+dvwa,Directory Browsing,Medium,Medium,http://host.docker.internal:8080/vulnerabilities/?C=M;O=A,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/?C=M;O=A,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/vulnerabilities/,x-content-type-options
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/vulnerabilities/?C=M;O=A,x-content-type-options
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080/security.php,security
+dvwa,Authentication Request Identified,Informational,High,http://host.docker.internal:8080/login.php,Login
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080/security.php,PHPSESSID
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080/security.php,security
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/fi/,
+dvwa,Session Management Response Identified,Informational,Medium,http://host.docker.internal:8080/security.php,PHPSESSID
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/weak_id/,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/csp/,
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080/index.php,PHPSESSID
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/csrf/,
+dvwa,Cookie No HttpOnly Flag,Low,Medium,http://host.docker.internal:8080/index.php,security
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/captcha/,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/view_source.php,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/upload/,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/javascript/,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/icons/unknown.gif,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/view_help.php,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/icons/back.gif,
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080/index.php,PHPSESSID
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/icons/unknown.gif,x-content-type-options
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/view_source_all.php,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/icons/blank.gif,
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/icons/folder.gif,
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/icons/back.gif,x-content-type-options
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/icons/folder.gif,x-content-type-options
+dvwa,X-Content-Type-Options Header Missing,Low,Medium,http://host.docker.internal:8080/icons/blank.gif,x-content-type-options
+dvwa,Cookie without SameSite Attribute,Low,Medium,http://host.docker.internal:8080/index.php,security
+dvwa,Session Management Response Identified,Informational,Medium,http://host.docker.internal:8080/index.php,PHPSESSID
+dvwa,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,http://host.docker.internal:8080/vulnerabilities/xss_d/,
+dvwa,Cross Site Scripting (Reflected),High,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r/?name=%3C%2Fpre%3E%3CscrIpt%3Ealert%281%29%3B%3C%2FscRipt%3E%3Cpre%3E,name
+dvwa,Cross Site Scripting (Reflected),High,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/?id=%27%22%3CscrIpt%3Ealert%281%29%3B%3C%2FscRipt%3E&Submit=Submit,id
+dvwa,Cross Site Scripting (Reflected),High,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,txtName
+dvwa,Cross Site Scripting (Reflected),High,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,mtxMessage
+dvwa,Cross Site Scripting (Reflected),High,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,btnSign
+dvwa,Cross Site Scripting (Persistent),High,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,txtName
+dvwa,Cross Site Scripting (Persistent),High,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,mtxMessage
+dvwa,SQL Injection - MySQL,High,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/?id=%27&Submit=Submit,id
+dvwa,SQL Injection,High,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r/?name=test+AND+1%3D1+--+,name
+dvwa,SQL Injection,High,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/?id=1&Submit=Submit%27+AND+%271%27%3D%271%27+--+,Submit
+dvwa,SQL Injection,High,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind/?id=2%2F2&Submit=Submit,id
+dvwa,Directory Browsing,Medium,Medium,http://host.docker.internal:8080/vulnerabilities/,
+dvwa,Directory Browsing,Medium,Medium,http://host.docker.internal:8080/dvwa/css/,
+dvwa,Directory Browsing,Medium,Medium,http://host.docker.internal:8080/dvwa/,
+dvwa,Directory Browsing,Medium,Medium,http://host.docker.internal:8080/dvwa/images/,
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_d/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/weak_id/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/fi/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/javascript/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csrf/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/exec/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/weak_id/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_d/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csp/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/javascript/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/fi/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/upload/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csrf/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/weak_id/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_d/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/exec/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csp/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/javascript/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/exec/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/weak_id/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_d/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/captcha/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csrf/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/javascript/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/fi/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/upload/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/exec/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/weak_id/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csrf/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/javascript/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/fi/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_d/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/exec/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/weak_id/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/captcha/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/upload/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csrf/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/weak_id/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/javascript/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/fi/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/captcha/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csp/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/exec/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_d/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/weak_id/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/upload/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csrf/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/captcha/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/exec/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/javascript/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/fi/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/weak_id/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_d/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csp/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csrf/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/captcha/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/upload/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/exec/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/exec/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/javascript/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/fi/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csp/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_d/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/weak_id/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csrf/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/javascript/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/upload/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/weak_id/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/fi/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/exec/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csrf/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_d/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csp/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/exec/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/weak_id/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/javascript/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/fi/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csrf/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/upload/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_d/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/javascript/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/fi/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/upload/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/captcha/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csrf/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/javascript/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/exec/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csp/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_d/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/fi/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/brute/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_d/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csrf/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/captcha/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/fi/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/upload/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csp/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/upload/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/brute/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/captcha/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csp/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/upload/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/brute/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/upload/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/captcha/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csp/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/brute/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/captcha/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csp/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/brute/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csp/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/captcha/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/brute/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/captcha/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/brute/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/brute/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/brute/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/brute/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/brute/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/brute/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/css,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/images,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/css,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/css,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/images,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/images,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/images,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/css,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/index.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/images,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/css,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/index.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/images,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/css,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/css,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/images,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/index.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/css,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/index.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/images,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/css,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/images,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/index.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/css,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/images,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/index.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/images,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/css,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/images,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/index.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/dvwa/css,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/index.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/index.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/index.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/index.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/index.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s/,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/brute,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/captcha,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csp,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/captcha,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csp,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/exec,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/fi,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/javascript,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csrf,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/captcha,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/brute,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/exec,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/javascript,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csp,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/fi,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/brute,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/security.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csrf,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csp,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/javascript,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/exec,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/captcha,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/fi,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/brute,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/javascript,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csrf,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csp,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/fi,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csrf,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csp,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/brute,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/exec,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/captcha,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/javascript,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csrf,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csp,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/brute,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/fi,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/exec,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/captcha,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/javascript,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csrf,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csp,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/fi,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/brute,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/exec,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/javascript,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csp,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csrf,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/captcha,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/fi,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/javascript,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/brute,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/login.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/exec,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csp,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csrf,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/javascript,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/captcha,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/fi,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/brute,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csrf,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/javascript,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/exec,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csp,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/captcha,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csrf,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/fi,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/javascript,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/brute,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csp,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/exec,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/captcha,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/javascript,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csrf,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/brute,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/fi,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/captcha,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/exec,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/brute,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/captcha,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/csrf,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/fi,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/exec,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/fi,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/exec,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_source.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_source_all.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_help.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/weak_id,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_d,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_source.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_source_all.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_help.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/weak_id,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/upload,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_d,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_source.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_source_all.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/weak_id,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_help.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/upload,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_source.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_d,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_source_all.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/weak_id,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_help.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_source.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/upload,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_d,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_source_all.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/weak_id,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_help.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_s,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_source.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/upload,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_d,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_source_all.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/weak_id,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_help.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_source.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/upload,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_source_all.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_d,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/weak_id,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_help.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_source.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/upload,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_source_all.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_d,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/weak_id,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_help.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_source.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/upload,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_source_all.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_d,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_help.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/weak_id,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_source.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_help.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_source_all.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/upload,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_d,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/weak_id,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_source.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_source_all.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_help.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/upload,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_d,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_source.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/weak_id,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_source_all.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/view_help.php,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/upload,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_d,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/weak_id,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/upload,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/xss_d,Header User-Agent
+dvwa,User Agent Fuzzer,Informational,Medium,http://host.docker.internal:8080/vulnerabilities/upload,Header User-Agent

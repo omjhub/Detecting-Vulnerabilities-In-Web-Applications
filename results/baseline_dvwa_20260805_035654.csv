@@ -1,0 +1,5 @@
+target,alert_name,risk,confidence,url,param
+dvwa,Cross Site Scripting (Reflected),High,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/?id=%27%22%3CscrIpt%3Ealert%281%29%3B%3C%2FscRipt%3E&Submit=Submit,id
+dvwa,SQL Injection - MySQL,High,Medium,http://host.docker.internal:8080/vulnerabilities/sqli/?id=%27&Submit=Submit,id
+dvwa,SQL Injection,High,Medium,http://host.docker.internal:8080/vulnerabilities/sqli_blind/?id=1%27+AND+%271%27%3D%271%27+--+&Submit=Submit,id
+dvwa,Cross Site Scripting (Reflected),High,Medium,http://host.docker.internal:8080/vulnerabilities/xss_r/?name=%3C%2Fpre%3E%3CscrIpt%3Ealert%281%29%3B%3C%2FscRipt%3E%3Cpre%3E,name

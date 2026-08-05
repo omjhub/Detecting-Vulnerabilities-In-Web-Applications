@@ -1,0 +1,2 @@
+target,alert_name,risk,confidence,url,param
+juiceshop,SQL Injection,High,Low,http://host.docker.internal:3000/rest/products/search?q=test%27,q
